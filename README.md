@@ -11,6 +11,26 @@ If you wish to add a template of your own, please fork this repository and creat
 
 
 
+## Resources
+
+LaTeX basics:
+
+https://www.colorado.edu/aps/sites/default/files/attached-files/latex_primer.pdf
+
+
+
+References and citations:
+
+https://en.wikibooks.org/wiki/LaTeX/Bibliographies_with_biblatex_and_biber
+
+
+
+Writing classes and packages:
+
+https://www.latex-project.org/help/documentation/clsguide.pdf
+
+
+
 ## Authors
 
 - **Jacob Sanchez Perez \<jsanchez-perez@uclan.ac.uk>**
