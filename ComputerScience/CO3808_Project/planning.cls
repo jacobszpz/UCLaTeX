@@ -26,7 +26,7 @@
 
 
 % Custom main font
-\setmainfont{Avenir Next LT Pro}
+\setmainfont[BoldFont={Avenir Next LT Pro Bold}]{Avenir Next LT Pro}
 
 % Page header font
 \newfontfamily\TimesNewRoman{Times New Roman}
