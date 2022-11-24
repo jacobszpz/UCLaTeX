@@ -25,7 +25,11 @@
 
 
 % Font and section counter
-\setmainfont{Avenir Next LT Pro}
+\IfFontExistsTF{Avenir Next LT Pro}{
+    \setmainfont{Avenir Next LT Pro}[
+        BoldFont    = {Avenir Next LT Pro Bold}
+    ]
+}{}
 \setcounter{section}{1}
 
 % Custom color for headings
