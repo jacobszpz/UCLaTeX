@@ -26,15 +26,31 @@
 
 
 % Custom main font
-\setmainfont[BoldFont={Avenir Next LT Pro Bold}]{Avenir Next LT Pro}
+\IfFontExistsTF{Avenir Next LT Pro}{
+    \setmainfont{Avenir Next LT Pro}[
+        BoldFont    = {Avenir Next LT Pro Bold}
+    ]
+}{}
+
 
 % Page header font
-\newfontfamily\TimesNewRoman{Times New Roman}
+% In order of preference
+% Times New Roman > Tex Gyre Termes > cmr10
+\IfFontExistsTF{Times New Roman}{
+    \newfontfamily\PageHeaderSerif{Times New Roman}
+}{
+    \IfFontExistsTF{Tex Gyre Termes}{
+        \newfontfamily\PageHeaderSerif{Tex Gyre Termes}
+    }{
+        \newfontfamily\PageHeaderSerif{cmr10}
+    }
+}
 
 % Headers / Footnotes
 \setlength{\headheight}{14.5pt}
 \pagestyle{fancy}
-\rhead{{\color{lightgray}\TimesNewRoman\ssmall{CO3808 Honours Degree Project | Computer Science | University of Central Lancashire}}}
+\rhead{{\color{lightgray}\PageHeaderSerif\ssmall{CO3808 Honours Degree Project
+| Computer Science | University of Central Lancashire}}}
 \renewcommand{\headrulewidth}{0pt}
 
 % Section heading style
