@@ -39,8 +39,8 @@
 \IfFontExistsTF{Times New Roman}{
     \newfontfamily\PageHeaderSerif{Times New Roman}
 }{
-    \IfFontExistsTF{Tex Gyre Termes}{
-        \newfontfamily\PageHeaderSerif{Tex Gyre Termes}
+    \IfFontExistsTF{TeX Gyre Termes}{
+        \newfontfamily\PageHeaderSerif{TeX Gyre Termes}
     }{
         \newfontfamily\PageHeaderSerif{cmr10}
     }
